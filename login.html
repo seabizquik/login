@@ -6,6 +6,9 @@
 	<title id="title">Login Page</title>
  <link rel="stylesheet" type="text/css" href="style.css">
  <script>
+function setFocusToTextBox(){
+    document.getElementById("username").focus();
+};
  function validateForm() {
     var y = document.forms["login_form"]["password"].value;
     var x = document.forms["login_form"]["username"].value;
@@ -23,6 +26,7 @@
         return false;  
     }
 }
+
 </script>
 </head>
 
@@ -36,7 +40,7 @@
 <div id="login">
 		<h2 id="login_heading">Login</h2>
 		<p><label for="username">Username (required):</label>		
-		<input type="text" size="35" name="username" id="username" required></p>
+		<input type="text" size="35" name="username" id="username" autofocus required></p>
 		<p><label for="password">Password (required):</label>
 			<input type="password" size="35" name="password" id="password" required></p>
 			</fieldset>
