@@ -32,15 +32,16 @@ function setFocusToTextBox(){
 
 
 <body>
-<div role="alert">
-<p id="login_message">Please enter your username and password below.</p>
-</div>
+
 
 <form name="login_form" onsubmit="validateForm()" action="success.html">
 <div id="login">
-		<h2 id="login_heading">Login</h2>
+		<h1 id="login_heading">Login</h1>
+        <div role="alert">
+<p id="login_message">Please enter your username and password below.</p>
+</div>
 		<p><label for="username">Username (required):</label>		
-		<input type="text" size="35" name="username" id="username" autofocus required></p>
+		<input aria-describedby="username" type="text" size="35" name="username" id="username" autofocus required></p>
 		<p><label for="password">Password (required):</label>
 			<input type="password" size="35" name="password" id="password" required></p>
 			</fieldset>

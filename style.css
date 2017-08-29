@@ -1,11 +1,22 @@
+button#login_button {
+    height: 42px;
+    width: 87px;
+}
+
+button#login_button:hover {
+    height: 42px;
+    width: 87px;
+    background-color: #B2E7F4;
+}
+
 a {
 	text-decoration: none;
+	color: #3366CC;
 
 }
 
 a:hover {
 	text-decoration: underline;
-	
 }
 
 p#login_message {
