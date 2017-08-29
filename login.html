@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title id="title">Login Page</title>
+ <link rel="stylesheet" type="text/css" href="style.css">
+ <script>
+ function validateForm() {
+    var y = document.forms["login_form"]["password"].value;
+    var x = document.forms["login_form"]["username"].value;
+    if (x == "" && y == "") {
+        document.getElementById("login_message").innerHTML = "Username and password are required";
+        return false;  
+    } else if (x == "") {
+        document.getElementById("login_message").innerHTML = "Username is required";
+        return false;
+    } else if (y == "") {
+        document.getElementById("login_message").innerHTML = "Password is required";
+        return false;  
+    } else {
+    	document.getElementById("login_message").innerHTML = "You are now logged in.";
+        return false;  
+    }
+}
+</script>
+</head>
+
+
+<body>
+<div role="alert">
+<p id="login_message">Please enter your username and password below.</p>
+</div>
+
+<form name="login_form" onsubmit="validateForm()" action="success.html">
+<div id="login">
+		<h2 id="login_heading">Login</h2>
+		<p><label for="username">Username (required):</label>		
+		<input type="text" size="35" name="username" id="username" required></p>
+		<p><label for="password">Password (required):</label>
+			<input type="password" size="35" name="password" id="password" required></p>
+			</fieldset>
+
+
+   <button id="login_button" type="submit" name="login" onClick="validateForm()"; return false>Log in</button>
+
+   <p><a href="password_recovery.html">Click here if you forgot your password.</a></p>
+</div>
+</form>
+</body>
+</html>
+
