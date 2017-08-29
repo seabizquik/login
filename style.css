@@ -10,19 +10,14 @@ button#login_button:hover {
 }
 
 a {
-	text-decoration: none;
-	color: #3366CC;
+	text-decoration: underline;
+	color: #6a5eff;
 
 }
 
 a:hover {
-	text-decoration: underline;
+	color:#000;
 }
-
-p#login_message {
-	color: #b30000;
-}
-
 
 #password_recovery a {
 	text-decoration: none;
