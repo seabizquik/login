@@ -1,0 +1,24 @@
+a {
+	text-decoration: none;
+
+}
+
+a:hover {
+	text-decoration: underline;
+	
+}
+
+p#login_message {
+	color: #b30000;
+}
+
+
+#password_recovery a {
+	text-decoration: none;
+
+}
+
+#password_recovery a:hover {
+	text-decoration: underline;
+	
+}
