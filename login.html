@@ -6,9 +6,12 @@
 	<title id="title">Login Page</title>
  <link rel="stylesheet" type="text/css" href="style.css">
  <script>
+ // Function to automatically set focus to username field
 function setFocusToTextBox(){
     document.getElementById("username").focus();
 };
+
+//function to display error messages for missing values in fields or display success message
  function validateForm() {
     var y = document.forms["login_form"]["password"].value;
     var x = document.forms["login_form"]["username"].value;
@@ -33,13 +36,14 @@ function setFocusToTextBox(){
 
 <body>
 
-
+<!-- Headers above messages -->
 <form name="login_form" onsubmit="validateForm()" action="success.html">
 <div id="login">
 		<h1 id="login_heading">Login</h1>
         <div role="alert">
 <p id="login_message">Please enter your username and password below.</p>
 </div>
+<!-- clear labels for fields -->
 		<p><label for="username">Username (required):</label>		
 		<input aria-describedby="username" type="text" size="35" name="username" id="username" autofocus required></p>
 		<p><label for="password">Password (required):</label>
@@ -48,6 +52,7 @@ function setFocusToTextBox(){
 
 
    <button id="login_button" type="submit" name="login" onClick="validateForm()"; return false>Log in</button>
+<!-- Clear instructions for users -->
 
    <p><a href="password_recovery.html">Click here if you forgot your password.</a></p>
 </div>
